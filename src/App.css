@@ -1,0 +1,4 @@
+/* App-level reset — sections nested in App get no extra padding since each component manages its own */
+main > section {
+  padding: 0;
+}

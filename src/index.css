@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ===================== COLOR TOKENS ===================== */
+:root {
+  --dark-forest: #2d3a1a;
+  --forest-green: #3d4a22;
+  --earth-brown: #7a5c2e;
+  --warm-tan: #c9a87a;
+  --light-tan: #dfc49a;
+  --sage-green: #8fb34a;
+  --moss-green: #4e6b1f;
+  --pale-cream: #f5eedf;
+  --off-white: #faf6ee;
+  --text-dark: #1e2610;
+  --text-mid: #3a4825;
+  --text-light: #8fa06b;
+  --glass-bg: rgba(255,255,255,0.06);
+  --glass-border: rgba(200,190,150,0.18);
+  --section-divider: rgba(143,179,74,0.25);
+}
+
+/* ===================== BASE RESET ===================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark-forest);
+  color: var(--pale-cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ===================== SCROLL REVEAL ===================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.22s; }
+.delay-3 { transition-delay: 0.34s; }
+.delay-4 { transition-delay: 0.46s; }
+.delay-5 { transition-delay: 0.58s; }
+
+/* ===================== TYPOGRAPHY ===================== */
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* ===================== EMPHASIS ===================== */
+.accent-phrase {
+  color: var(--warm-tan);
+  font-weight: 600;
+  font-style: normal;
+}
+
+em {
+  color: var(--sage-green);
+  font-style: italic;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: 1.85;
+  color: var(--light-tan);
+}
+
+/* ===================== LAYOUT ===================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+/* ===================== SECTION DIVIDER ===================== */
+.section-line {
+  width: 64px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sage-green), var(--warm-tan));
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* ===================== BADGES ===================== */
+.badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-green);
+  background: rgba(143, 179, 74, 0.12);
+  border: 1px solid rgba(143, 179, 74, 0.3);
+  padding: 0.3rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+/* ===================== GLASS CARD ===================== */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2.25rem 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+}
+
+/* ===================== PILL NUMBER ===================== */
+.pill-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--sage-green), var(--moss-green));
+  color: var(--pale-cream);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(78,107,31,0.4);
+}
+
+/* ===================== SCROLLBAR ===================== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-forest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--moss-green);
+  border-radius: 3px;
+}
+
+/* ===================== SELECTION ===================== */
+::selection {
+  background: rgba(143,179,74,0.3);
+  color: var(--pale-cream);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+  html { font-size: 17px; }
+  .container { padding: 0 2rem; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 16px; }
+  section { padding: 4.5rem 0; }
+  .container { padding: 0 1.5rem; }
+  .glass-card { padding: 1.75rem 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  section { padding: 3.5rem 0; }
+  .container { padding: 0 1.1rem; }
+  .glass-card { padding: 1.4rem 1.1rem; }
+}
