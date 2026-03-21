@@ -28,7 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 17.5px;
 }
 
 body {
@@ -200,19 +200,19 @@ section {
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
-  html { font-size: 17px; }
+  html { font-size: 16.5px; }
   .container { padding: 0 2rem; }
 }
 
 @media (max-width: 768px) {
-  html { font-size: 16px; }
+  html { font-size: 15.5px; }
   section { padding: 4.5rem 0; }
   .container { padding: 0 1.5rem; }
   .glass-card { padding: 1.75rem 1.5rem; }
 }
 
 @media (max-width: 480px) {
-  html { font-size: 15px; }
+  html { font-size: 14.5px; }
   section { padding: 3.5rem 0; }
   .container { padding: 0 1.1rem; }
   .glass-card { padding: 1.4rem 1.1rem; }
