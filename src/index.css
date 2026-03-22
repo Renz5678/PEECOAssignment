@@ -2,21 +2,22 @@
 
 /* ===================== COLOR TOKENS ===================== */
 :root {
-  --dark-forest: #2d3a1a;
-  --forest-green: #3d4a22;
-  --earth-brown: #7a5c2e;
+  --dark-forest: #222b14;
+  --forest-green: #34421d;
+  --earth-brown: #6b4c2a;
   --warm-tan: #c9a87a;
-  --light-tan: #dfc49a;
+  --terracotta: #b85d39;
+  --rust: #8a3f23;
   --sage-green: #8fb34a;
   --moss-green: #4e6b1f;
   --pale-cream: #f5eedf;
   --off-white: #faf6ee;
   --text-dark: #1e2610;
   --text-mid: #3a4825;
-  --text-light: #8fa06b;
+  --text-light: #9ba885;
   --glass-bg: rgba(255,255,255,0.06);
   --glass-border: rgba(200,190,150,0.18);
-  --section-divider: rgba(143,179,74,0.25);
+  --section-divider: rgba(184, 93, 57, 0.25);
 }
 
 /* ===================== BASE RESET ===================== */
@@ -92,7 +93,7 @@ h1, h2, h3, h4, h5 {
 
 /* ===================== EMPHASIS ===================== */
 .accent-phrase {
-  color: var(--warm-tan);
+  color: var(--terracotta);
   font-weight: 600;
   font-style: normal;
 }
@@ -107,7 +108,8 @@ p {
   font-family: 'Crimson Text', serif;
   font-size: 1.2rem;
   line-height: 1.85;
-  color: var(--light-tan);
+  color: var(--pale-cream);
+  opacity: 0.85;
 }
 
 /* ===================== LAYOUT ===================== */
@@ -126,7 +128,7 @@ section {
 .section-line {
   width: 64px;
   height: 3px;
-  background: linear-gradient(90deg, var(--sage-green), var(--warm-tan));
+  background: linear-gradient(90deg, var(--terracotta), var(--warm-tan));
   border-radius: 2px;
   margin-bottom: 1.5rem;
 }
@@ -139,9 +141,9 @@ section {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--sage-green);
-  background: rgba(143, 179, 74, 0.12);
-  border: 1px solid rgba(143, 179, 74, 0.3);
+  color: var(--warm-tan);
+  background: rgba(201, 168, 122, 0.12);
+  border: 1px solid rgba(201, 168, 122, 0.3);
   padding: 0.3rem 0.85rem;
   border-radius: 100px;
   margin-bottom: 1.2rem;
@@ -171,13 +173,13 @@ section {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--sage-green), var(--moss-green));
+  background: linear-gradient(135deg, var(--terracotta), var(--rust));
   color: var(--pale-cream);
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(78,107,31,0.4);
+  box-shadow: 0 4px 12px rgba(184, 93, 57, 0.4);
 }
 
 /* ===================== SCROLLBAR ===================== */

@@ -63,9 +63,7 @@ export default function BaySection() {
 
           <p className="bay-context-text reveal delay-4">
             Manila Bay&apos;s rehabilitation has been underway since 2019, yet{' '}
-            <em>water testing alone cannot confirm whether the bay is truly recovering</em>. With fishermen reporting{' '}
-            <span className="accent-phrase">depleted catches and murky waters</span>, and{' '}
-            <span className="accent-phrase">99% of the bay&apos;s mangroves already lost</span>, the need for a more complete picture of ecological recovery is clear. eDNA metabarcoding offers exactly that — a more powerful and sensitive approach to tracking what&apos;s actually living in the bay and whether biodiversity is genuinely returning.
+            <em>water testing alone cannot confirm whether the bay is truly recovering</em>. With fishermen reporting depleted catches and murky waters, and 99% of the bay&apos;s mangroves already lost, the need for a more complete picture of ecological recovery is clear. eDNA metabarcoding offers exactly that — a more powerful and sensitive approach to tracking what&apos;s actually living in the bay and whether biodiversity is genuinely returning.
           </p>
           <p className="citation-tag reveal delay-4">— Ramos, 2023 &amp; Gold et al., 2022</p>
         </div>
@@ -74,11 +72,10 @@ export default function BaySection() {
         <div className="leverage-header" style={{ marginTop: '4rem' }}>
           <h3 className="reveal delay-1 leverage-title">How We Could Leverage Data</h3>
           <p className="reveal delay-2 leverage-lead">
-            By using water and sediment eDNA data as a living scorecard for Manila Bay&apos;s rehabilitation, we propose a computational monitoring system designed around{' '}
-            <em>four stages of ecological intelligence</em>{' '}
-            — all powered by{' '}
-            <span className="accent-phrase">machine learning models capable of processing millions of molecular reads</span>{' '}
-            and converting them into a continuous, evidence-based narrative of whether Manila Bay is truly coming back to life.
+            By leveraging water and sediment eDNA data as a <em>dynamic biological scorecard</em> for Manila Bay’s rehabilitation, we propose a computational monitoring system structured around <em>four stages of ecological intelligence</em>. Each stage is driven by machine learning models trained on large-scale eDNA datasets, enabling the system to continuously interpret millions of molecular reads and detect meaningful changes in biodiversity over time.
+          </p>
+          <p className="reveal delay-3 leverage-lead" style={{ marginTop: '1rem' }}>
+            Rather than relying solely on surface-level indicators, the system captures shifts in the bay’s living communities at a molecular level—tracking the return of sensitive species, identifying areas where recovery is uneven, and revealing whether apparent improvements reflect true ecological restoration. In doing so, it transforms fragmented genetic signals into a continuous, evidence-based narrative of recovery, offering a more precise and responsive way to understand whether Manila Bay is genuinely coming back to life.
           </p>
         </div>
 

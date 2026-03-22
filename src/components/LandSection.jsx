@@ -46,9 +46,7 @@ export default function LandSection() {
         <div className="glass-card npp-card reveal delay-3">
           <div className="npp-icon">🌿</div>
           <p className="npp-text">
-            Net Primary Productivity — the rate at which plants convert sunlight into biomass — is one of the most <em>direct measurable indicators of ecosystem health</em>. When forests are cleared for agriculture or land is degraded,{' '}
-            <span className="accent-phrase">NPP declines, reducing the energy and biomass available to support other organisms</span>{' '}
-            and disrupting the entire biological community beneath the surface.
+            Net Primary Productivity — the rate at which plants convert sunlight into biomass — is one of the most <em>direct measurable indicators of ecosystem health</em>. When forests are cleared for agriculture or land is degraded, NPP declines, reducing the energy and biomass available to support other organisms and disrupting the entire biological community beneath the surface.
           </p>
           <p className="citation-tag">— Biology Online, 2023</p>
         </div>
@@ -57,10 +55,10 @@ export default function LandSection() {
         <div className="leverage-header reveal delay-1" style={{ marginTop: '4rem' }}>
           <h3 className="leverage-title">How We Could Leverage Data</h3>
           <p className="leverage-lead reveal delay-2">
-            By using soil eDNA metabarcoding data as a proxy for NPP health, we propose a computational monitoring system built around{' '}
-            <em>four interconnected layers</em>. Underlying all four layers are{' '}
-            <span className="accent-phrase">machine learning models trained on eDNA sequence data</span>{' '}
-            — capable of finding patterns across millions of molecular reads that no manual survey could realistically process.
+            By leveraging soil eDNA metabarcoding data as an <em>indirect indicator of Net Primary Productivity (NPP)</em>, we propose a computational monitoring framework composed of <em>four interconnected layers</em>. Each layer is powered by machine learning models trained on large-scale eDNA sequence datasets, allowing the system to detect subtle shifts in soil biological communities that signal changes in ecosystem productivity.
+          </p>
+          <p className="leverage-lead reveal delay-3" style={{ marginTop: '1rem' }}>
+            Rather than relying on visible signs of degradation, the framework continuously interprets molecular-level data to identify early patterns of decline, map areas of emerging risk, and evaluate whether restoration efforts are genuinely rebuilding healthy ecological conditions. In doing so, it transforms millions of fragmented genetic reads into actionable insights—enabling faster, more precise, and more proactive environmental monitoring than traditional methods alone.
           </p>
         </div>
 

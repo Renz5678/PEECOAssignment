@@ -36,7 +36,7 @@
 .orb-1 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, #4e6b1f 0%, transparent 70%);
+  background: radial-gradient(circle, var(--terracotta) 0%, transparent 70%);
   top: -150px;
   right: -100px;
   animation-delay: 0s;
@@ -45,7 +45,7 @@
 .orb-2 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, #7a5c2e 0%, transparent 70%);
+  background: radial-gradient(circle, var(--rust) 0%, transparent 70%);
   bottom: -80px;
   left: -80px;
   animation-delay: -4s;
@@ -54,11 +54,11 @@
 .orb-3 {
   width: 280px;
   height: 280px;
-  background: radial-gradient(circle, #8fb34a 0%, transparent 70%);
+  background: radial-gradient(circle, var(--warm-tan) 0%, transparent 70%);
   top: 40%;
   left: 50%;
   animation-delay: -8s;
-  opacity: 0.2;
+  opacity: 0.15;
 }
 
 @keyframes drift {
@@ -84,7 +84,7 @@
 }
 
 .hero-title-accent {
-  background: linear-gradient(120deg, var(--sage-green) 0%, var(--warm-tan) 100%);
+  background: linear-gradient(120deg, var(--terracotta) 0%, var(--warm-tan) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -121,7 +121,7 @@
 .scroll-line {
   width: 40px;
   height: 1px;
-  background: linear-gradient(90deg, var(--sage-green), transparent);
+  background: linear-gradient(90deg, var(--terracotta), transparent);
   animation: pulse-line 2s ease-in-out infinite;
 }
 
