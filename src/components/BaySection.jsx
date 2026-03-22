@@ -14,7 +14,7 @@ const stages = [
   },
   {
     num: '03',
-    title: 'Longitudinal Validation',
+    title: 'Recovery Verification',
     desc: 'Answers the harder question: are the species communities that define a healthy bay actually rebuilding, or are cleaner-looking waters masking an ecosystem that is still functionally collapsed?',
   },
   {
